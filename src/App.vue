@@ -1,10 +1,10 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
   <QuizForm />
 </template>
 
 <script>
-import QuizForm from "@/components/QuizForm.vue";
+import QuizForm from "./components/QuizForm.vue";
+import "./assets/styles/global.css";
 
 export default {
   name: "App",
