@@ -1,5 +1,6 @@
 <template>
   <form @submit.prevent="onSubmit" class="screen">
+    <!-- .prevent chống chuyển trang, vẫn đứng ở trang hiện tại -->
     <div class="container">
       <div class="row"><h1 class="title">Now, about your project...</h1></div>
       <div class="row">
@@ -29,7 +30,7 @@
                 <input
                   id="email"
                   type="email"
-                  placeholder="skyalbert.960@gmail.com"
+                  placeholder="skyalbert960@gmail.com"
                   v-model="quiz.email"
                 />
               </div>
@@ -137,10 +138,11 @@
 
 <script>
 export default {
+  // Lưu dữ liệu vào biến
   data() {
     return {
       quiz: {
-        fullName: "Sky Albert",
+        fullName: "",
         email: "",
         desc: "",
         jobs: [],
